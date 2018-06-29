@@ -2,7 +2,7 @@
 
     productId: number;
     productName: string;
-    productCode: number;
+    productCode: string;
     date: string;
     desc: string;
     price: number;

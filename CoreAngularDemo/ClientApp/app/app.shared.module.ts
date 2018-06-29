@@ -10,6 +10,11 @@ import { HomeComponent } from './components/home/home.component';
 import { FetchDataComponent } from './components/fetchdata/fetchdata.component';
 import { CounterComponent } from './components/counter/counter.component';
 import { ProductListComponent } from './components/product/product-list.component';
+import { ConvertToSpacesPipe } from './components/shared/convert-to-spaces';
+import { StarComponent } from './components/shared/star.component';
+import { ProductService } from './components/product/product.service';
+
+
 
 @NgModule({
     declarations: [
@@ -18,7 +23,13 @@ import { ProductListComponent } from './components/product/product-list.componen
         CounterComponent,
         FetchDataComponent,
         HomeComponent,
-        ProductListComponent
+        ProductListComponent,
+        ConvertToSpacesPipe,
+        StarComponent,
+  
+    ],
+    providers: [
+        ProductService
     ],
     imports: [
         CommonModule,

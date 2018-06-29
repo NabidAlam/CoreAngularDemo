@@ -22,12 +22,18 @@
 
   <ItemGroup>
     <None Remove="ClientApp\app\components\product\product-list.component.ts" />
+    <None Remove="ClientApp\app\components\product\product.service.ts" />
     <None Remove="ClientApp\app\components\product\product.ts" />
+    <None Remove="ClientApp\app\components\shared\convert-to-spaces.ts" />
+    <None Remove="ClientApp\app\components\shared\star.component.ts" />
   </ItemGroup>
 
   <ItemGroup>
     <TypeScriptCompile Include="ClientApp\app\components\product\product-list.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\components\product\product.service.ts" />
     <TypeScriptCompile Include="ClientApp\app\components\product\product.ts" />
+    <TypeScriptCompile Include="ClientApp\app\components\shared\convert-to-spaces.ts" />
+    <TypeScriptCompile Include="ClientApp\app\components\shared\star.component.ts" />
   </ItemGroup>
 
   <Target Name="DebugRunWebpack" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('wwwroot\dist') ">
